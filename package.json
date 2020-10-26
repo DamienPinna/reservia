@@ -1,0 +1,12 @@
+{
+  "name": "reservia",
+  "version": "1.0.0",
+  "description": "site de réservation",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./design/sass/style.scss:./design/css/style.css --style expanded",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Damien Pinna",
+  "license": "ISC"
+}
