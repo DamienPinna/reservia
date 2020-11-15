@@ -17,4 +17,39 @@ html {
   width: 1.5rem;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container {
+  margin: 5rem;
+}
+
+.primary-color {
+  color: #0065FC;
+}
+
+/* NAVBAR */
+.logo {
+  width: 12rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bloc-liens-navigation {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-between;
+  width: 37rem;
+  font-size: 1.7rem;
+}
+
 /*# sourceMappingURL=style.css.map */
