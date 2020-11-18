@@ -1,3 +1,5 @@
+@import './variables';
+
 /* INITIALISATION */
 
 *, *::before, *::after {
@@ -13,16 +15,18 @@ html {
 }
 
 
-/* VARIABLES */
-
-$primary-color: #0065FC;
-$secondary-color: #DEEBFF;
-$background-color: #F2F2F2;
-
 /* GENERAL */
 
+h1 {
+   margin: 3rem 0 0.5rem 0;
+}
+
+aside {
+   font-size: 1.5rem;
+}
+
 .icone {
-   width: 1.5rem;
+   width: 1.2rem;
 }
 
 ul {
@@ -61,3 +65,44 @@ nav {
    font-size: 1.7rem;
 }
 
+/* HEADER */
+
+.recherche {
+   margin: 1.5rem 0 2rem 0;
+   display: flex;
+
+   .container-icone-localisation {
+      display: flex;
+      justify-content: center;
+      width: 3.8rem;
+      border: 0.1rem solid $background-color;
+      border-top-left-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+      background-color: $background-color;
+
+      .icone-localisation {
+         width: 1rem;
+      }
+   }
+
+   button {
+      cursor: pointer;
+      color: #fff;
+      padding: 1rem;
+      border: 0.1rem solid $primary-color;
+      border-top-right-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      background-color: $primary-color;
+   }
+
+   input {
+      width: 17rem;
+      height: 3.75rem;
+      padding-left: 1rem;
+      font-weight: bold;
+      border-top: 0.1rem solid $background-color;
+      border-bottom: 0.1rem solid $background-color;
+      border-left: none;
+      border-right: none;
+   }
+}

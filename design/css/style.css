@@ -11,10 +11,17 @@ html {
   font-family: 'Raleway', sans-serif;
 }
 
-/* VARIABLES */
 /* GENERAL */
+h1 {
+  margin: 3rem 0 0.5rem 0;
+}
+
+aside {
+  font-size: 1.5rem;
+}
+
 .icone {
-  width: 1.5rem;
+  width: 1.2rem;
 }
 
 ul {
@@ -50,6 +57,43 @@ nav {
   justify-content: space-between;
   width: 37rem;
   font-size: 1.7rem;
+}
+
+/* HEADER */
+.recherche {
+  margin: 1.5rem 0 2rem 0;
+  display: flex;
+}
+.recherche .container-icone-localisation {
+  display: flex;
+  justify-content: center;
+  width: 3.8rem;
+  border: 0.1rem solid #F2F2F2;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  background-color: #F2F2F2;
+}
+.recherche .container-icone-localisation .icone-localisation {
+  width: 1rem;
+}
+.recherche button {
+  cursor: pointer;
+  color: #fff;
+  padding: 1rem;
+  border: 0.1rem solid #0065FC;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background-color: #0065FC;
+}
+.recherche input {
+  width: 17rem;
+  height: 3.75rem;
+  padding-left: 1rem;
+  font-weight: bold;
+  border-top: 0.1rem solid #F2F2F2;
+  border-bottom: 0.1rem solid #F2F2F2;
+  border-left: none;
+  border-right: none;
 }
 
 /*# sourceMappingURL=style.css.map */
