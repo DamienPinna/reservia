@@ -25,10 +25,6 @@ aside {
    font-size: 1.5rem;
 }
 
-.icone {
-   width: 1.2rem;
-}
-
 ul {
    list-style: none;
 }
@@ -39,7 +35,9 @@ a {
 }
 
 .container {
-   margin: 5rem;
+   max-width: 120rem;
+   margin: auto;
+   padding: 1.5rem;
 }
 
 .primary-color {
@@ -104,5 +102,61 @@ nav {
       border-bottom: 0.1rem solid $background-color;
       border-left: none;
       border-right: none;
+   }
+}
+
+.filtre {
+   display: flex;
+   align-items: center;
+   margin-bottom: 3rem;
+
+   p {
+      font-weight: bold;
+      font-size: 1.7rem;
+
+   }
+
+   label {
+      font-weight: bold;
+      font-size: 1.7rem;
+      padding-right: 2rem;
+   }
+
+   .item-filtre {
+      display: flex;
+      align-items: center;
+      height: 4rem;
+      margin-left: 2.5rem;
+      border-top: 0.2rem solid $background-color;
+      border-right: 0.2rem solid $background-color;
+      border-bottom: 0.2rem solid $background-color;
+      border-radius: 30px;
+
+      .cercle {
+         display: flex;
+         justify-content: center;
+         background-color: $secondary-color;
+         width: 4rem;
+         height: 4rem;
+         border: 0.1rem solid $secondary-color;
+         border-radius: 50%;
+
+         .icone-money {
+            width: 1.9rem;
+         }
+         .icone-child {
+            width: 1.4rem;
+         }
+         .icone-heart {
+            width: 1.6rem;
+         }
+         .icone-dog {
+            width: 2.2rem;
+         }
+      }
+
+      input {
+         opacity: 0;
+      }
    }
 }

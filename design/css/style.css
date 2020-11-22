@@ -20,10 +20,6 @@ aside {
   font-size: 1.5rem;
 }
 
-.icone {
-  width: 1.2rem;
-}
-
 ul {
   list-style: none;
 }
@@ -34,7 +30,9 @@ a {
 }
 
 .container {
-  margin: 5rem;
+  max-width: 120rem;
+  margin: auto;
+  padding: 1.5rem;
 }
 
 .primary-color {
@@ -94,6 +92,55 @@ nav {
   border-bottom: 0.1rem solid #F2F2F2;
   border-left: none;
   border-right: none;
+}
+
+.filtre {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.filtre p {
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+.filtre label {
+  font-weight: bold;
+  font-size: 1.7rem;
+  padding-right: 2rem;
+}
+.filtre .item-filtre {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  margin-left: 2.5rem;
+  border-top: 0.2rem solid #F2F2F2;
+  border-right: 0.2rem solid #F2F2F2;
+  border-bottom: 0.2rem solid #F2F2F2;
+  border-radius: 30px;
+}
+.filtre .item-filtre .cercle {
+  display: flex;
+  justify-content: center;
+  background-color: #DEEBFF;
+  width: 4rem;
+  height: 4rem;
+  border: 0.1rem solid #DEEBFF;
+  border-radius: 50%;
+}
+.filtre .item-filtre .cercle .icone-money {
+  width: 1.9rem;
+}
+.filtre .item-filtre .cercle .icone-child {
+  width: 1.4rem;
+}
+.filtre .item-filtre .cercle .icone-heart {
+  width: 1.6rem;
+}
+.filtre .item-filtre .cercle .icone-dog {
+  width: 2.2rem;
+}
+.filtre .item-filtre input {
+  opacity: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
