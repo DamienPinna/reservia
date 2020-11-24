@@ -31,17 +31,19 @@ a {
   color: #0065FC;
 }
 
-/* NAVBAR */
-.logo {
-  width: 12rem;
+.fat {
+  font-weight: bold;
 }
 
+/* NAVBAR */
 nav {
   display: flex;
   justify-content: space-between;
 }
-
-.bloc-liens-navigation {
+nav .logo {
+  width: 12rem;
+}
+nav .bloc-liens-navigation {
   display: flex;
   margin-top: 1rem;
   justify-content: space-between;
@@ -133,7 +135,7 @@ header .filtre .item-filtre {
   border-top: 0.2rem solid #F2F2F2;
   border-right: 0.2rem solid #F2F2F2;
   border-bottom: 0.2rem solid #F2F2F2;
-  border-radius: 30px;
+  border-radius: 3rem;
 }
 header .filtre .item-filtre .cercle {
   display: flex;
@@ -158,6 +160,60 @@ header .filtre .item-filtre .cercle .icone-dog {
 }
 header .filtre .item-filtre input {
   opacity: 0;
+}
+
+/*  MAIN */
+main .container-hebergements {
+  border: 0.1rem solid #F2F2F2;
+  background-color: #F2F2F2;
+  border-radius: 3rem;
+  padding: 3.5rem;
+}
+main .container-hebergements h2 {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+main .container-hebergements .container-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-rows: repeat(2, max-content);
+  grid-gap: 3rem;
+}
+main .container-hebergements .container-cards .card {
+  border: 0.1 solid #fff;
+  background-color: #fff;
+  border-radius: 3rem;
+}
+main .container-hebergements .container-cards .card .photo-chambre {
+  width: 100%;
+  height: 20rem;
+  padding: 0.5rem;
+  object-fit: cover;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+}
+main .container-hebergements .container-cards .card h3 {
+  font-size: 1.5rem;
+}
+main .container-hebergements .container-cards .card p {
+  font-size: 1.3rem;
+}
+main .container-hebergements .container-cards .card h3, main .container-hebergements .container-cards .card p {
+  margin: 0 0 0.7rem 1.4rem;
+}
+main .container-hebergements .container-cards .card .stars {
+  display: flex;
+  margin: 0 0 1.3rem 1.4rem;
+}
+main .container-hebergements .container-cards .card .stars .star {
+  width: 1.6rem;
+}
+main .container-hebergements button {
+  cursor: pointer;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: bolder;
+  margin-top: 3.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
