@@ -353,7 +353,14 @@ main {
 
          .grid-gauche, .grid-droite {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(23.8rem, 1fr));
+            grid-template-rows: max-content;
+            grid-gap: 3.5rem;
+         }
+
+         .col-2, .col-4 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
             grid-template-rows: max-content;
             grid-gap: 3.5rem;
          }
@@ -378,7 +385,7 @@ main {
 
          .item1 {
             .photo-activites {
-              height: 40rem;
+              height: 41.7rem;
             }
          }
 
@@ -390,25 +397,26 @@ main {
 
          .item3 {
             .photo-activites {
-               height: 15rem;
+               height: 12rem;
             }
          }
 
          .item4 {
             .photo-activites {
-               height: 40rem;
+               height: 41.7rem;
             }
          }
 
          .item5 {
             .photo-activites {
-               height: 22.35rem;
+               height: 13rem;
+               object-position: top;
             }
          }
 
          .item6 {
             .photo-activites {
-               height: 22.35rem;
+               height: 19rem;
             }
          }
       }

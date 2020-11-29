@@ -292,7 +292,13 @@ main .activites .container-activites {
 }
 main .activites .container-activites .grid-gauche, main .activites .container-activites .grid-droite {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(23.8rem, 1fr));
+  grid-template-rows: max-content;
+  grid-gap: 3.5rem;
+}
+main .activites .container-activites .col-2, main .activites .container-activites .col-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
   grid-template-rows: max-content;
   grid-gap: 3.5rem;
 }
@@ -312,22 +318,23 @@ main .activites .container-activites .items figcaption {
   margin: 2rem;
 }
 main .activites .container-activites .item1 .photo-activites {
-  height: 40rem;
+  height: 41.7rem;
 }
 main .activites .container-activites .item2 .photo-activites {
   height: 20rem;
 }
 main .activites .container-activites .item3 .photo-activites {
-  height: 15rem;
+  height: 12rem;
 }
 main .activites .container-activites .item4 .photo-activites {
-  height: 40rem;
+  height: 41.7rem;
 }
 main .activites .container-activites .item5 .photo-activites {
-  height: 22.35rem;
+  height: 13rem;
+  object-position: top;
 }
 main .activites .container-activites .item6 .photo-activites {
-  height: 22.35rem;
+  height: 19rem;
 }
 
 /*# sourceMappingURL=style.css.map */
