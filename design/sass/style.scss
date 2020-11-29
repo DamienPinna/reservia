@@ -345,8 +345,72 @@ main {
          margin-bottom: 2.5rem;
       }
 
-      .grid-activites {
+      .container-activites {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+         grid-template-rows: max-content;
+         grid-gap: 3.5rem;
 
+         .grid-gauche, .grid-droite {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+            grid-template-rows: max-content;
+            grid-gap: 3.5rem;
+         }
+
+         .items {
+            border: 0.1rem solid $background-color;
+            border-radius: 3rem;
+            
+            .photo-activites {
+               object-fit: cover;
+               width: 100%;
+               border-top-left-radius: 3rem;
+               border-top-right-radius: 3rem;
+            }
+            
+            figcaption {
+               font-size: 1.5rem;
+               font-weight: bold;
+               margin: 2rem;
+            }
+         }
+
+         .item1 {
+            .photo-activites {
+              height: 40rem;
+            }
+         }
+
+         .item2 {
+            .photo-activites {
+               height: 20rem;
+            }
+         }
+
+         .item3 {
+            .photo-activites {
+               height: 15rem;
+            }
+         }
+
+         .item4 {
+            .photo-activites {
+               height: 40rem;
+            }
+         }
+
+         .item5 {
+            .photo-activites {
+               height: 22.35rem;
+            }
+         }
+
+         .item6 {
+            .photo-activites {
+               height: 22.35rem;
+            }
+         }
       }
    }
 
