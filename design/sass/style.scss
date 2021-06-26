@@ -1,4 +1,5 @@
 @import "./variables";
+@import "./mixins";
 
 /* INITIALISATION */
 
@@ -96,7 +97,7 @@ header {
   }
 
   .recherche {
-    margin: 1.5rem 0 2rem 0;
+    margin-top: 1.5rem;
     display: flex;
 
     .container-icone-localisation {
@@ -137,8 +138,38 @@ header {
 
   .filtre {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    margin-bottom: 3rem;
+    margin: 2rem 0 3rem;
+    max-width: 85rem;
+    justify-content: space-between;
+
+    @include breackpoint(793px) {
+      .filtre-4 {
+        margin-top: 1.5rem;
+      }
+    }
+
+    @include breackpoint(574px) {
+      .filtre-3 {
+        margin-top: 1.5rem;
+      }
+    }
+
+    @include breackpoint(450px) {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-around;
+      height: 28rem;
+
+      .filtre-3 {
+        margin-top: 0;
+      }
+
+      .filtre-4 {
+        margin-top: 0;
+      }
+    }
 
     p {
       font-weight: bold;
@@ -155,7 +186,6 @@ header {
       display: flex;
       align-items: center;
       height: 4rem;
-      margin-left: 2.5rem;
       border-top: 0.2rem solid $background-color;
       border-right: 0.2rem solid $background-color;
       border-bottom: 0.2rem solid $background-color;
@@ -201,11 +231,20 @@ main {
     grid-gap: 3.5rem;
     margin-bottom: 5rem;
 
+    @include breackpoint(1200px) {
+      display: flex;
+      flex-direction: column;
+    }
+
     .container-hebergements {
       border: 0.1rem solid $background-color;
       background-color: $background-color;
       border-radius: 3rem;
       padding: 3.5rem;
+
+      @include breackpoint(1200px) {
+        order: 2;
+      }
 
       h2 {
         font-size: 2rem;
@@ -271,6 +310,10 @@ main {
       background-color: $background-color;
       border-radius: 3rem;
       padding: 3.5rem;
+
+      @include breackpoint(1200px) {
+        order: 1;
+      }
 
       .title {
         display: flex;
@@ -427,27 +470,27 @@ main {
 /* FOOTER */
 
 footer {
-   background-color: $background-color;
-   display: flex;
-   justify-content: space-between;
-   margin-top: 3rem;
-   padding: 3.5rem 1.5rem;
-   height: 18rem;
+  background-color: $background-color;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding: 3.5rem 1.5rem;
+  height: 18rem;
 
-   .item {
-      flex-grow: 1;
+  .item {
+    flex-grow: 1;
 
-      h2 {
-         font-size: 1.6rem;
+    h2 {
+      font-size: 1.6rem;
+    }
+
+    ul {
+      font-size: 1.4rem;
+      margin-top: 1.5rem;
+
+      li {
+        margin-top: 1.5rem;
       }
-
-      ul {
-         font-size: 1.4rem;
-         margin-top: 1.5rem;
-
-         li {
-            margin-top: 1.5rem;
-         }
-      }
-   }
+    }
+  }
 }
