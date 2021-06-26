@@ -1,5 +1,7 @@
 /* INITIALISATION */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
@@ -8,7 +10,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 /* GENERAL */
@@ -205,7 +207,8 @@ main .grid-hebergement-et-populaire .container-hebergements .container-cards .ca
 main .grid-hebergement-et-populaire .container-hebergements .container-cards .card p {
   font-size: 1.3rem;
 }
-main .grid-hebergement-et-populaire .container-hebergements .container-cards .card h3, main .grid-hebergement-et-populaire .container-hebergements .container-cards .card p {
+main .grid-hebergement-et-populaire .container-hebergements .container-cards .card h3,
+main .grid-hebergement-et-populaire .container-hebergements .container-cards .card p {
   margin: 0 0 0.7rem 1.4rem;
 }
 main .grid-hebergement-et-populaire .container-hebergements .container-cards .card .stars {
@@ -290,13 +293,15 @@ main .activites .container-activites {
   grid-template-rows: max-content;
   grid-gap: 3.5rem;
 }
-main .activites .container-activites .grid-gauche, main .activites .container-activites .grid-droite {
+main .activites .container-activites .grid-gauche,
+main .activites .container-activites .grid-droite {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(23.8rem, 1fr));
   grid-template-rows: max-content;
   grid-gap: 3.5rem;
 }
-main .activites .container-activites .col-2, main .activites .container-activites .col-4 {
+main .activites .container-activites .col-2,
+main .activites .container-activites .col-4 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
   grid-template-rows: max-content;
@@ -335,6 +340,29 @@ main .activites .container-activites .item5 .photo-activites {
 }
 main .activites .container-activites .item6 .photo-activites {
   height: 19rem;
+}
+
+/* FOOTER */
+footer {
+  background-color: #F2F2F2;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding: 3.5rem 1.5rem;
+  height: 18rem;
+}
+footer .item {
+  flex-grow: 1;
+}
+footer .item h2 {
+  font-size: 1.6rem;
+}
+footer .item ul {
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+}
+footer .item ul li {
+  margin-top: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
