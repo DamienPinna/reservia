@@ -183,9 +183,7 @@ header .filtre {
     justify-content: space-around;
     height: 28rem;
   }
-  header .filtre .filtre-3 {
-    margin-top: 0;
-  }
+  header .filtre .filtre-3,
   header .filtre .filtre-4 {
     margin-top: 0;
   }
@@ -207,6 +205,7 @@ header .filtre .item-filtre {
   border-right: 0.2rem solid #F2F2F2;
   border-bottom: 0.2rem solid #F2F2F2;
   border-radius: 3rem;
+  transition: color 0.6s ease;
 }
 header .filtre .item-filtre .cercle {
   display: flex;
@@ -231,6 +230,9 @@ header .filtre .item-filtre .cercle .icone-dog {
 }
 header .filtre .item-filtre input {
   opacity: 0;
+}
+header .filtre .item-filtre:hover {
+  color: #0065FC;
 }
 
 /*  MAIN */
