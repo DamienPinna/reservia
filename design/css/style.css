@@ -52,7 +52,46 @@ nav .bloc-liens-navigation {
   width: 37rem;
   font-size: 1.7rem;
 }
+@media screen and (max-width: 740px) {
+  nav .bloc-liens-navigation {
+    justify-content: flex-end;
+  }
+  nav .bloc-liens-navigation li {
+    margin-left: 1.5rem;
+  }
+}
+@media screen and (max-width: 520px) {
+  nav .bloc-liens-navigation li:nth-child(-n + 2) {
+    display: none;
+  }
+}
 
+.nav-petit-ecran {
+  display: none;
+}
+
+@media screen and (max-width: 520px) {
+  .nav-petit-ecran {
+    display: block;
+  }
+  .nav-petit-ecran .bloc-liens-navigation-petit-ecran {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    font-size: 1.7rem;
+  }
+  .nav-petit-ecran .bloc-liens-navigation-petit-ecran li {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .nav-petit-ecran .bloc-liens-navigation-petit-ecran li:first-child {
+    border-bottom: 0.4rem solid #0065FC;
+  }
+  .nav-petit-ecran .bloc-liens-navigation-petit-ecran li:nth-child(2) {
+    border-bottom: 0.4rem solid #F2F2F2;
+  }
+}
 /* HEADER */
 header h1 {
   margin: 3rem 0 0.5rem 0;

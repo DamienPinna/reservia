@@ -58,6 +58,51 @@ nav {
     justify-content: space-between;
     width: 37rem;
     font-size: 1.7rem;
+
+    @include breackpoint(740px) {
+      justify-content: flex-end;
+
+      li {
+        margin-left: 1.5rem;
+      }
+    }
+
+    @include breackpoint(520px) {
+      li:nth-child(-n + 2) {
+        display: none;
+      }
+    }
+  }
+}
+
+.nav-petit-ecran {
+  display: none;
+}
+
+@include breackpoint(520px) {
+  .nav-petit-ecran {
+    display: block;
+
+    .bloc-liens-navigation-petit-ecran {
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      font-size: 1.7rem;
+
+      li {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+      }
+
+      li:first-child {
+        border-bottom: 0.4rem solid $primary-color;
+      }
+
+      li:nth-child(2) {
+        border-bottom: 0.4rem solid $background-color;
+      }
+    }
   }
 }
 
