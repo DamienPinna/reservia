@@ -52,6 +52,10 @@ nav .bloc-liens-navigation {
   width: 37rem;
   font-size: 1.7rem;
 }
+nav .bloc-liens-navigation .btn-hebergement:hover,
+nav .bloc-liens-navigation .btn-activites:hover {
+  color: #0065FC;
+}
 @media screen and (max-width: 740px) {
   nav .bloc-liens-navigation {
     justify-content: flex-end;
@@ -426,11 +430,13 @@ main .activites .container-activites .item6 .photo-activites {
 /* FOOTER */
 footer {
   background-color: #F2F2F2;
+  height: 18rem;
+  margin-top: 3rem;
+}
+footer .container {
   display: flex;
   justify-content: space-between;
-  margin-top: 3rem;
   padding: 3.5rem 1.5rem;
-  height: 18rem;
 }
 footer .item {
   flex-grow: 1;

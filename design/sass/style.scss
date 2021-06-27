@@ -59,6 +59,11 @@ nav {
     width: 37rem;
     font-size: 1.7rem;
 
+    .btn-hebergement:hover,
+    .btn-activites:hover {
+      color: $primary-color;
+    }
+
     @include breackpoint(740px) {
       justify-content: flex-end;
 
@@ -516,11 +521,14 @@ main {
 
 footer {
   background-color: $background-color;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 3rem;
-  padding: 3.5rem 1.5rem;
   height: 18rem;
+  margin-top: 3rem;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 3.5rem 1.5rem;
+  }
 
   .item {
     flex-grow: 1;

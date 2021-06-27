@@ -15,16 +15,16 @@
       <nav>
          <img class="logo" src="./images/logo/reservia.png" alt="logo du site : reservia">
          <ul class="bloc-liens-navigation">
-            <li><a class="primary-color" href="">Hébergement</a></li>
-            <li><a href="#">Activités</a></li>
+            <li><a class="btn-hebergement" href="#hebergement">Hébergement</a></li>
+            <li><a class="btn-activites" href="#activites">Activités</a></li>
             <li><a class="primary-color" href="#">S'inscrire</a></li>
          </ul>
       </nav>
       <!-- Sur petits écrans -->
       <nav class="nav-petit-ecran">
          <ul class="bloc-liens-navigation-petit-ecran">
-            <li><a class="primary-color" href="#">Hébergement</a></li>
-            <li><a href="#">Activités</a></li>
+            <li><a class="primary-color" href="#hebergement-petit-ecran">Hébergement</a></li>
+            <li><a href="#activites">Activités</a></li>
          </ul>
       </nav>
 
@@ -85,7 +85,7 @@
       </header>
 
       <main>
-         <div class="grid-hebergement-et-populaire">
+         <div id="hebergement" class="grid-hebergement-et-populaire">
             <section class="container-hebergements">
                <h2>Hébergements à Marseille</h2>
                <div class="container-cards">
@@ -171,7 +171,7 @@
                <button>Afficher plus</button>
             </section>
 
-            <section class="container-populaires">
+            <section id="hebergement-petit-ecran" class="container-populaires">
                <div class="title">
                   <h2>Les plus populaires</h2>
                   <img class="icone" src="./images/icones/chart-line-solid.svg"
@@ -234,7 +234,7 @@
             </section>
          </div>
 
-         <section class="activites">
+         <section id="activites" class="activites">
             <h2>Activités à Marseille</h2>
             <div class="container-activites">
                <div class="grid-gauche">
@@ -286,27 +286,29 @@
    </div>
 
    <footer>
-      <div class="item item-1">
-         <h2>A propos</h2>
-         <ul>
-            <li>Fonctionnement du site</li>
-            <li>Conditions générales de vente</li>
-            <li>Données et confidentialité</li>
-         </ul>
-      </div>
-      <div class="item item-2">
-         <h2>Nos hénergements</h2>
-         <ul>
-            <li>Charte qualité</li>
-            <li>Soumettre votre hôtel</li>
-         </ul>
-      </div>
-      <div class="item item-3">
-         <h2>Assistance</h2>
-         <ul>
-            <li>Centre d'aide</li>
-            <li>Nous contacter</li>
-         </ul>
+      <div class="container">
+         <div class="item item-1">
+            <h2>A propos</h2>
+            <ul>
+               <li>Fonctionnement du site</li>
+               <li>Conditions générales de vente</li>
+               <li>Données et confidentialité</li>
+            </ul>
+         </div>
+         <div class="item item-2">
+            <h2>Nos hénergements</h2>
+            <ul>
+               <li>Charte qualité</li>
+               <li>Soumettre votre hôtel</li>
+            </ul>
+         </div>
+         <div class="item item-3">
+            <h2>Assistance</h2>
+            <ul>
+               <li>Centre d'aide</li>
+               <li>Nous contacter</li>
+            </ul>
+         </div>
       </div>
    </footer>
 </body>
