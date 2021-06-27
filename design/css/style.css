@@ -378,6 +378,12 @@ main .activites .container-activites {
   grid-template-rows: max-content;
   grid-gap: 3.5rem;
 }
+@media screen and (max-width: 558px) {
+  main .activites .container-activites {
+    display: flex;
+    flex-direction: column;
+  }
+}
 main .activites .container-activites .grid-gauche,
 main .activites .container-activites .grid-droite {
   display: grid;
@@ -391,21 +397,6 @@ main .activites .container-activites .col-4 {
   grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
   grid-template-rows: max-content;
   grid-gap: 3.5rem;
-}
-main .activites .container-activites .items {
-  border: 0.1rem solid #F2F2F2;
-  border-radius: 3rem;
-}
-main .activites .container-activites .items .photo-activites {
-  object-fit: cover;
-  width: 100%;
-  border-top-left-radius: 3rem;
-  border-top-right-radius: 3rem;
-}
-main .activites .container-activites .items figcaption {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin: 2rem;
 }
 main .activites .container-activites .item1 .photo-activites {
   height: 41.7rem;
@@ -426,17 +417,45 @@ main .activites .container-activites .item5 .photo-activites {
 main .activites .container-activites .item6 .photo-activites {
   height: 19rem;
 }
+main .activites .container-activites .items {
+  border: 0.1rem solid #F2F2F2;
+  border-radius: 3rem;
+}
+main .activites .container-activites .items .photo-activites {
+  object-fit: cover;
+  width: 100%;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+}
+@media screen and (max-width: 558px) {
+  main .activites .container-activites .items .photo-activites {
+    height: 18rem;
+  }
+}
+main .activites .container-activites .items figcaption {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 2rem;
+}
 
 /* FOOTER */
 footer {
   background-color: #F2F2F2;
-  height: 18rem;
   margin-top: 3rem;
 }
 footer .container {
   display: flex;
   justify-content: space-between;
   padding: 3.5rem 1.5rem;
+}
+@media screen and (max-width: 580px) {
+  footer .container {
+    flex-direction: column;
+  }
+  footer .container .item-2,
+  footer .container .item-3 {
+    margin-top: 3rem;
+  }
 }
 footer .item {
   flex-grow: 1;

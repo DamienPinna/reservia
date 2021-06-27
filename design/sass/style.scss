@@ -443,6 +443,11 @@ main {
       grid-template-rows: max-content;
       grid-gap: 3.5rem;
 
+      @include breackpoint(558px) {
+        display: flex;
+        flex-direction: column;
+      }
+
       .grid-gauche,
       .grid-droite {
         display: grid;
@@ -457,24 +462,6 @@ main {
         grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
         grid-template-rows: max-content;
         grid-gap: 3.5rem;
-      }
-
-      .items {
-        border: 0.1rem solid $background-color;
-        border-radius: 3rem;
-
-        .photo-activites {
-          object-fit: cover;
-          width: 100%;
-          border-top-left-radius: 3rem;
-          border-top-right-radius: 3rem;
-        }
-
-        figcaption {
-          font-size: 1.5rem;
-          font-weight: bold;
-          margin: 2rem;
-        }
       }
 
       .item1 {
@@ -513,6 +500,28 @@ main {
           height: 19rem;
         }
       }
+
+      .items {
+        border: 0.1rem solid $background-color;
+        border-radius: 3rem;
+
+        .photo-activites {
+          object-fit: cover;
+          width: 100%;
+          border-top-left-radius: 3rem;
+          border-top-right-radius: 3rem;
+
+          @include breackpoint(558px) {
+            height: 18rem;
+          }
+        }
+
+        figcaption {
+          font-size: 1.5rem;
+          font-weight: bold;
+          margin: 2rem;
+        }
+      }
     }
   }
 }
@@ -521,13 +530,21 @@ main {
 
 footer {
   background-color: $background-color;
-  height: 18rem;
   margin-top: 3rem;
 
   .container {
     display: flex;
     justify-content: space-between;
     padding: 3.5rem 1.5rem;
+
+    @include breackpoint(580px) {
+      flex-direction: column;
+
+      .item-2,
+      .item-3 {
+        margin-top: 3rem;
+      }
+    }
   }
 
   .item {
