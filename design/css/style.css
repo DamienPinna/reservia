@@ -255,14 +255,24 @@ main .grid-hebergement-et-populaire .container-hebergements {
   border-radius: 3rem;
   padding: 3.5rem;
 }
+main .grid-hebergement-et-populaire .container-hebergements h2 {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
 @media screen and (max-width: 1200px) {
   main .grid-hebergement-et-populaire .container-hebergements {
     order: 2;
   }
 }
-main .grid-hebergement-et-populaire .container-hebergements h2 {
-  font-size: 2rem;
-  margin-bottom: 2.5rem;
+@media screen and (max-width: 430px) {
+  main .grid-hebergement-et-populaire .container-hebergements {
+    border: none;
+    padding: 3.5rem 0.5rem 0.5rem 0.5rem;
+    background-color: #fff;
+  }
+  main .grid-hebergement-et-populaire .container-hebergements h2 {
+    padding-left: 1rem;
+  }
 }
 main .grid-hebergement-et-populaire .container-hebergements .container-cards {
   display: grid;
@@ -316,6 +326,17 @@ main .grid-hebergement-et-populaire .container-populaires {
 @media screen and (max-width: 1200px) {
   main .grid-hebergement-et-populaire .container-populaires {
     order: 1;
+  }
+}
+@media screen and (max-width: 430px) {
+  main .grid-hebergement-et-populaire .container-populaires {
+    padding: 3.5rem 0.5rem 0.5rem 0.5rem;
+  }
+  main .grid-hebergement-et-populaire .container-populaires h2 {
+    padding-left: 1rem;
+  }
+  main .grid-hebergement-et-populaire .container-populaires .icone {
+    padding-right: 1rem;
   }
 }
 main .grid-hebergement-et-populaire .container-populaires .title {

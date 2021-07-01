@@ -294,13 +294,23 @@ main {
       border-radius: 3rem;
       padding: 3.5rem;
 
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 2.5rem;
+      }
+
       @include breackpoint(1200px) {
         order: 2;
       }
 
-      h2 {
-        font-size: 2rem;
-        margin-bottom: 2.5rem;
+      @include breackpoint(430px) {
+        border: none;
+        padding: 3.5rem 0.5rem 0.5rem 0.5rem;
+        background-color: #fff;
+
+        h2 {
+          padding-left: 1rem;
+        }
       }
 
       .container-cards {
@@ -365,6 +375,18 @@ main {
 
       @include breackpoint(1200px) {
         order: 1;
+      }
+
+      @include breackpoint(430px) {
+        padding: 3.5rem 0.5rem 0.5rem 0.5rem;
+
+        h2 {
+          padding-left: 1rem;
+        }
+
+        .icone {
+          padding-right: 1rem;
+        }
       }
 
       .title {
