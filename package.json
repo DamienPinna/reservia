@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./design/sass/style.scss:./design/css/style.css --style expanded",
+    "prefix": "postcss ./design/css/style.css --use autoprefixer -d ./design/css/prefixed/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Damien Pinna",
-  "license": "ISC"
+  "license": "ISC",
+  "browserslist": "last 4 versions"
 }
